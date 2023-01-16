@@ -1,0 +1,232 @@
+html{ overflow-y: scroll;}
+
+.header-grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    background-image:
+    linear-gradient(to bottom, rgba(0,0,205, 0.52), rgba(0,0,205, 0.52)),
+    url('./Header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.header-item{
+    font-family: "garamond", Times, serif;
+    color: white;
+    margin: auto auto auto auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 100px;
+    max-width: 80%;
+    margin-left: 100px;
+}
+
+.details{
+    margin: auto auto;
+    font-size: 40px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
+.header-button{
+    border-radius: 30px;
+    background: white;
+    box-shadow: none;
+    border: 0;
+    color: gray;
+    font-size: large;
+    padding: 15px 25px;
+    margin-bottom: 100px;
+    margin-left: 350px;
+}
+
+.lectures-grid-container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-image:
+    linear-gradient(to bottom right, rgba(102, 204, 153, 0.52), rgba(148,0,211, 0.52)),
+    url('./Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lectures-item{
+    margin-top: 200px;
+    margin-bottom: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+    background-color: whitesmoke;
+    text-align: center;
+    max-width: 260px;
+    min-height: 400px;
+    border-radius: 10px;
+    color:grey;
+}
+
+.lectures-item:hover{
+    transform: scale(1.05);
+    translate: 0 -10%;
+    transition: 0.5s all ease 0s;
+}
+
+.lectures-img{
+    height: 100px;
+    width: 100px;
+    filter: opacity(0.4);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lectures-title{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.lectures-detail{
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.books-container{
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.books-title{
+    font-size: 30px;
+    font-family: "georgia", Times, serif;
+    background: -webkit-linear-gradient(rgba(0,0,205, 0.40), rgba(0,0,205, 0.90));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.related-books-grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 130px;
+    background-size: cover;
+}
+
+.books-img{
+    width: 295px;
+    height: 200px;
+    clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 100%, 100% 0);
+}
+
+.books-img1{
+    background-size: cover;
+    background-image:
+    linear-gradient(to bottom right, rgba(102, 204, 153, 0.52), rgba(102, 204, 153, 0.52)),
+    url("./Book1-2.png");
+    top: 0;
+}
+
+.books-img2{
+    background-size: cover;
+    background-image:
+    linear-gradient(to bottom right, rgba(0,0,205, 0.52), rgba(0,0,205, 0.52)),
+    url("./Book2-2.jpg");
+    top: 0;
+}
+
+.books-img3{
+    background-size: cover;
+    background-image:
+    linear-gradient(to bottom right, rgba(123,104,238, 0.5), rgba(123,104,238, 0.52)),
+    url("./Book3-2.png");
+    top: 0;
+}
+
+.book-title1{
+    font-weight:bolder;
+    background-image:
+    linear-gradient(to right, rgba(62, 204, 103, 0.5), rgba(62, 204, 103, 1));
+    position: relative;
+    translate: 0 -220%;
+    color: greenyellow;
+    width: 200px;
+}
+
+.book-title2{
+    font-weight:bolder;
+    background-image:
+    linear-gradient(to right, rgba(68,85,180,0.5), rgba(0,0,180, 1));
+    position: relative;
+    translate: 0 -220%;
+    color: lightblue;
+    width: 200px;
+}
+
+.book-title3{
+    font-weight:bolder;
+    background-image:
+    linear-gradient(to right, rgba(139,0,139, 0.5), rgba(139,0,139, 0.9));
+    position: relative;
+    translate: 0 -220%;
+    color: pink;
+    width: 200px;
+}
+
+.books-item{
+    max-height: 450px;
+    max-width: 295px;
+    margin: 10px 10px;
+    background-color: white;
+    box-shadow: black;
+    line-height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image:
+    linear-gradient(to bottom right, rgba(102, 204, 153, 0.42), rgba(148,0,211, 0.22));
+    margin-bottom: 50px;
+}
+
+.books-detail{
+    translate: 0 -50%;
+}
+
+.footer-grid-container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #353935;
+}
+
+.footer-item{
+    margin: 30px 10px;
+    color: white;
+    font-family: "georgia", Times, serif;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "georgia", Times, serif;
+    font-size: smaller;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+.links:active{
+    color: antiquewhite;
+}
+
+.footer-item1{
+    margin-right: 20px;
+}
