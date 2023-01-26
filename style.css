@@ -319,6 +319,7 @@ html{ overflow-y: scroll; overflow-x: hidden;}
     font-size: large;
     padding: 15px 25px;
     transition: transform .2s;
+    cursor: pointer;
 }  
 
 .flip-card-back-button:hover{
@@ -410,4 +411,95 @@ label:hover > div{
 #toggle-nav:checked ~ .nav-container ul li{
     transform: translateY(-0px);
     opacity: 1;
+}
+
+.modal{
+    display: none; 
+    position: fixed; 
+    z-index: 4; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal:target{
+    display: block;
+}
+
+.modal-content {
+    max-height: fit-content;
+    background-color: #fefefe;
+    margin: 170px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.modal-img{
+    max-width: 350px;
+    max-height: 450px;
+}
+
+.modal-title{
+    background: -webkit-linear-gradient(rgba(0,0,205, 0.40), rgba(0,0,205, 0.90));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 10px;
+}
+
+.modal-important{
+    color: grey;
+    margin-left: 10px;
+}
+
+.modal-texts{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: grey;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.modal-text2{
+    margin-right: 30px;
+}
+
+.close {
+    color: black;
+    float: right;
+    margin-right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    translate: -920% 530%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.modal-button{
+    border-radius: 30px;
+    background: blue;
+    box-shadow: none;
+    border: 0;
+    color: white;
+    font-size: large;
+    padding: 15px 25px;
+    margin-left: 350px;
+    transition: transform .2s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.modal-button:hover {
+    transform: scale(1.1);
+    background-color: blueviolet;
+    color: white;
+    transition: 0.2s all ease 0s;
 }
