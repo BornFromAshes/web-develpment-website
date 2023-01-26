@@ -22,6 +22,7 @@ html{ overflow-y: scroll;}
     font-size: 100px;
     max-width: 80%;
     margin-left: 100px;
+    animation: 2s ease-out 0s 1 sliding;
 }
 
 .details{
@@ -29,6 +30,7 @@ html{ overflow-y: scroll;}
     font-size: 40px;
     margin-left: 150px;
     margin-bottom: 30px;
+    animation: 2s ease-out 0s 1 sliding;
 }
 
 .header-button{
@@ -41,6 +43,10 @@ html{ overflow-y: scroll;}
     padding: 15px 25px;
     margin-bottom: 100px;
     margin-left: 350px;
+}
+
+.header-button:hover {
+    transform: scale(1.1);
 }
 
 .lectures-grid-container{
@@ -229,4 +235,13 @@ html{ overflow-y: scroll;}
 
 .footer-item1{
     margin-right: 20px;
+}
+
+@keyframes sliding {
+    0% {
+        transform: translate(-100%);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
