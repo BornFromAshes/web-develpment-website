@@ -9,12 +9,23 @@
 </head>
 
 <body>
+    <input type="checkbox" id="toggle-nav">
+    <label for="toggle-nav">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+    <div class="nav-container"><ul>
+        <li onclick="parent.location='#intro'">Intro</li>
+        <li onclick="parent.location='#lectures'">Lectures</li>
+        <li onclick="parent.location='#books'">Books</li>
+    </ul></div>
     <div class="container">
         <div class="header-grid-container" id="intro">
             <div class="header-item">
                 <p class="title">Internet Engineering</p>
                 <p class="details">Is what we are going to learn in this course</p>
-                <button class="header-button">SEE THE RELATED BOOKS</button>
+                <button class="header-button" onclick="parent.location='#lectures'">SEE THE RELATED BOOKS</button>
             </div>
         </div>
         <div class="lectures-grid-container" id="lectures">
@@ -47,33 +58,60 @@
         <div class="books-container" id="books">
             <p class="books-title">MOST POPULAR BOOKS</p>
             <div class="related-books-grid-container">
-                <div class="books-item books-item1">
-                    <img class="books-img books-img1"/>
-                    <p class="book-title1">JAVASCRIPT GUIDE</p>
-                    <p class="books-detail">
-                        By David Flangan <br>
-                        Seventh Edition <br>
-                        Published at 2020
-                    </p>
-                </div>
-                <div class="books-item books-item2">
-                    <img class="books-img books-img2"/>
-                    <p class="book-title2">ROAD TO REACT</p>
-                    <p class="books-detail">
-                        By Robin Wieruch <br>
-                        2022 Edition <br>
-                        Published at 2022
-                    </p>
-                </div>
-                <div class="books-item books-item3">
-                    <img class="books-img books-img3"/>
-                    <p class="book-title3">INTRODUCING GO</p>
-                    <p class="books-detail">
-                        By Celeb Doxecy <br>
-                        First Edition <br>
-                        Published at 2016
-                    </p>
-                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="books-img books-img1"/>
+                        <div class="book-title1">JAVASCRIPT GUIDE</div>
+                        <div class="books-detail">
+                            <p>By David Fiangan</p>
+                            <p>Seventh Edition</p>
+                            <p>Published at 2020</p>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <h1 class="flip-card-back-header">Buy now for 30.72$</h1>
+                        <button class="flip-card-back-button"> BUY NOW</button>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="books-img books-img2"/>
+                        <div class="book-title2">ROAD TO REACT</div>
+                        <div class="books-detail">
+                            <p>By Robin Wieruch</p>
+                            <p>2022 Edition</p>
+                            <p>Published at 2022</p>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <h1 class="flip-card-back-header">Buy now for 29.99$</h1>
+                        <button class="flip-card-back-button"> BUY NOW</button>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="books-img books-img3"/>
+                        <div class="book-title3">INTRODUCING GO</div>
+                        <div class="books-detail">
+                            <p>By Celeb Doxecy</p>
+                            <p>First Edition</p>
+                            <p>Published at 2016</p>
+                        </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <h1 class="flip-card-back-header">Buy now for 16.49$</h1>
+                        <button class="flip-card-back-button"> BUY NOW</button>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
         <footer>
