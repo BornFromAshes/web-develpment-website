@@ -1,7 +1,7 @@
 # web-develpment-website
 
 ## Overview
-The goal of this project was to create a user friendly website to introduce people to internet engineering and web development.
+The goal of this project is to create a user friendly website to introduce people to internet engineering and web development.
 
 ## See for yourself!
 The webpage is currenty available at https://bornfromashes.github.io/web-develpment-website/
