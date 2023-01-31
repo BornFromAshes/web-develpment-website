@@ -1,4 +1,4 @@
-# web-develpment-website
+# Web develpment website
 
 We want to design a website using CSS and HTML for a web programming course. This website consists of 5 main sections: Grid - Header - Lectures - Related Books - Footer
 
