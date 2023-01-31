@@ -43,4 +43,4 @@ The webpage is currenty available at https://bornfromashes.github.io/web-develpm
 
 ## Known Issues
 There aren't currently any issues so far so if you find any please create an issue on this repository.
-Also any suggestions to implement would be much appreciated.
+Any suggestions for implementation would also be greatly appreciated.
